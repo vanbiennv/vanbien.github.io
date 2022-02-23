@@ -3,45 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>PC03385-Bien</title>
+    <link rel="stylesheet" href="bai1lab10.css">
 </head>
 <body>
-    <table border="1" style="width: 90%;" align="center">
-    <tr>
-        <th>Thời gian</th>
-        <th colspan="3">Trận đấu</th>
-        <th>Trực tiếp</th>
-    </tr> 
-    <tr>
-        <th colspan="5">Vòng chung kết U19 Châu Á</th>
-    </tr> 
-    <tr>
-        <td>17/10<br>20:30</td>
-        <td>U19 Việt Nam</td>
-        <td></td>
-        <td>U19 UAE</td>
-        <td>Foxsports2</td>
-    </tr> 
-    <tr>
-        <td>17/10<br>20:30</td>
-        <td>U19Iran</td>
-        <td></td>
-        <td>U19 Nhật Bản</td>
-        <td></td>
-    </tr> 
-    <tr>
-        <td>17/10<br>20:30</td>
-        <td>U19 Iraq</td>
-        <td></td>
-        <td>U19 Triều Tiên</td>
-        <td></td>
-    </tr> 
-    <tr>
-        <td>17/10<br>20:30</td>
-        <td>U19 Yeman</td>
-        <td></td>
-        <td>U19 Qatar</td>
-        <td></td>
-    </tr> 
-    </table>
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label> Họ và tên</label> <br>
+            <input type="text" name="username" tabindex="1" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Quốc tịch</label> <br>
+            <input type="text" name="qt" value="Việt Nam" readonly class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Ghi chú</label> <br>
+            <input type="text" name="ghichu" tabindex="2" class="form-control">
+        </div>
+        <hr>
+        <div class="form-group">
+            <button tabindex="3" class="form-button">Thêm</button>
+            <button tabindex="4" class="form-button">Sửa</button>
+            <button disabled class="form-button">Xoá</button>
+        </div>
+    </form>
 </body>
 </html>
